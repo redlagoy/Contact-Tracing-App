@@ -48,5 +48,13 @@ namespace Contact_Tracing_App
             outputFile.Close();
 
         }
+
+        private void btnImport_Click(object sender, EventArgs e)
+        {
+            Form2 import = new Form2();
+            this.Hide();
+            import.ShowDialog();
+            this.Close();
+        }
     }
 }

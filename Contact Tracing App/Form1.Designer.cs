@@ -74,6 +74,7 @@ namespace Contact_Tracing_App
             this.btnImport.TabIndex = 2;
             this.btnImport.Text = "Import Info";
             this.btnImport.UseVisualStyleBackColor = true;
+            this.btnImport.Click += new System.EventHandler(this.btnImport_Click);
             // 
             // txtAddress
             // 

@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO
 using System.Windows.Forms;
 
 namespace Contact_Tracing_App
@@ -20,6 +21,14 @@ namespace Contact_Tracing_App
         private void btnImport_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnExport_Click(object sender, EventArgs e)
+        {
+            Form1 export = new Form1();
+            this.Hide();
+            export.ShowDialog();
+            this.Close();
         }
     }
 }
