@@ -44,6 +44,7 @@ namespace Contact_Tracing_App
             this.emailAddress = new System.Windows.Forms.Label();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.age = new System.Windows.Forms.Label();
+            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.SuspendLayout();
             // 
             // txtName
@@ -230,6 +231,7 @@ namespace Contact_Tracing_App
         private System.Windows.Forms.Label emailAddress;
         private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.Label age;
+        private System.Windows.Forms.SaveFileDialog saveFileDialog1;
     }
 }
 

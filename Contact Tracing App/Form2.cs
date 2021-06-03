@@ -33,11 +33,6 @@ namespace Contact_Tracing_App
                     mainText.Text = mainText.Text + line + newLine;
                 }
             }
-            else if (openFileDialog1.ShowDialog() == DialogResult.Cancel)
-            {
-                this.Close();
-            }
-
         }
 
         private void btnExport_Click(object sender, EventArgs e)
