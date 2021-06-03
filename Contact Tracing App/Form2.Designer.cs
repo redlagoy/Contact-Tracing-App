@@ -48,10 +48,12 @@ namespace Contact_Tracing_App
             // 
             // mainText
             // 
+            this.mainText.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.mainText.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.mainText.Location = new System.Drawing.Point(12, 91);
             this.mainText.Multiline = true;
             this.mainText.Name = "mainText";
+            this.mainText.ReadOnly = true;
             this.mainText.Size = new System.Drawing.Size(776, 277);
             this.mainText.TabIndex = 1;
             // 
@@ -85,6 +87,7 @@ namespace Contact_Tracing_App
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnExport);
             this.Controls.Add(this.btnImport);
