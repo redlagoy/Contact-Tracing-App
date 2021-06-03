@@ -6,7 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.IO
+using System.IO;
 using System.Windows.Forms;
 
 namespace Contact_Tracing_App
@@ -20,6 +20,23 @@ namespace Contact_Tracing_App
 
         private void btnImport_Click(object sender, EventArgs e)
         {
+            if (openFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                mainText.Clear();
+                StreamReader inputFile;
+
+                inputFile = File.OpenText(openFileDialog1.FileName);
+                string line;
+                while ((line = inputFile.ReadLine()) != null)
+                {
+                    string newLine = "\r\n";
+                    mainText.Text = mainText.Text + line + newLine;
+                }
+            }
+            else if (openFileDialog1.ShowDialog() == DialogResult.Cancel)
+            {
+                this.Close();
+            }
 
         }
 

@@ -30,9 +30,10 @@ namespace Contact_Tracing_App
         private void InitializeComponent()
         {
             this.title = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.mainText = new System.Windows.Forms.TextBox();
             this.btnImport = new System.Windows.Forms.Button();
             this.btnExport = new System.Windows.Forms.Button();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.SuspendLayout();
             // 
             // title
@@ -45,13 +46,14 @@ namespace Contact_Tracing_App
             this.title.TabIndex = 0;
             this.title.Text = "CONTACT TRACING";
             // 
-            // textBox1
+            // mainText
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 175F);
-            this.textBox1.Location = new System.Drawing.Point(12, 91);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(776, 272);
-            this.textBox1.TabIndex = 1;
+            this.mainText.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
+            this.mainText.Location = new System.Drawing.Point(12, 91);
+            this.mainText.Multiline = true;
+            this.mainText.Name = "mainText";
+            this.mainText.Size = new System.Drawing.Size(776, 277);
+            this.mainText.TabIndex = 1;
             // 
             // btnImport
             // 
@@ -75,6 +77,10 @@ namespace Contact_Tracing_App
             this.btnExport.UseVisualStyleBackColor = true;
             this.btnExport.Click += new System.EventHandler(this.btnExport_Click);
             // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -82,7 +88,7 @@ namespace Contact_Tracing_App
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnExport);
             this.Controls.Add(this.btnImport);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.mainText);
             this.Controls.Add(this.title);
             this.Name = "Form2";
             this.Text = "Form2";
@@ -94,8 +100,9 @@ namespace Contact_Tracing_App
         #endregion
 
         private System.Windows.Forms.Label title;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox mainText;
         private System.Windows.Forms.Button btnImport;
         private System.Windows.Forms.Button btnExport;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
     }
 }
