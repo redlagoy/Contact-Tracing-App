@@ -20,9 +20,9 @@ namespace Contact_Tracing_App
 
         private void btnImport_Click(object sender, EventArgs e)
         {
+            mainText.Clear();
             if (openFileDialog1.ShowDialog() == DialogResult.OK)
             {
-                mainText.Clear();
                 StreamReader inputFile;
 
                 inputFile = File.OpenText(openFileDialog1.FileName);
