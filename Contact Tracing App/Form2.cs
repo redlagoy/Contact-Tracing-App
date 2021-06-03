@@ -16,5 +16,10 @@ namespace Contact_Tracing_App
         {
             InitializeComponent();
         }
+
+        private void btnImport_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -29,12 +29,72 @@ namespace Contact_Tracing_App
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.title = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.btnImport = new System.Windows.Forms.Button();
+            this.btnExport = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // title
+            // 
+            this.title.AutoSize = true;
+            this.title.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F);
+            this.title.Location = new System.Drawing.Point(155, 9);
+            this.title.Name = "title";
+            this.title.Size = new System.Drawing.Size(485, 55);
+            this.title.TabIndex = 0;
+            this.title.Text = "CONTACT TRACING";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 175F);
+            this.textBox1.Location = new System.Drawing.Point(12, 91);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(776, 272);
+            this.textBox1.TabIndex = 1;
+            // 
+            // btnImport
+            // 
+            this.btnImport.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.btnImport.Location = new System.Drawing.Point(12, 374);
+            this.btnImport.Name = "btnImport";
+            this.btnImport.Size = new System.Drawing.Size(372, 64);
+            this.btnImport.TabIndex = 2;
+            this.btnImport.Text = "Import Info";
+            this.btnImport.UseVisualStyleBackColor = true;
+            this.btnImport.Click += new System.EventHandler(this.btnImport_Click);
+            // 
+            // btnExport
+            // 
+            this.btnExport.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.btnExport.Location = new System.Drawing.Point(416, 374);
+            this.btnExport.Name = "btnExport";
+            this.btnExport.Size = new System.Drawing.Size(372, 64);
+            this.btnExport.TabIndex = 3;
+            this.btnExport.Text = "Export Info";
+            this.btnExport.UseVisualStyleBackColor = true;
+            // 
+            // Form2
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnExport);
+            this.Controls.Add(this.btnImport);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.title);
+            this.Name = "Form2";
             this.Text = "Form2";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Label title;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button btnImport;
+        private System.Windows.Forms.Button btnExport;
     }
 }
